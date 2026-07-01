@@ -21,8 +21,8 @@ public class EmployeeService {
         EmployeePassport passport = new EmployeePassport();
         BeanUtils.copyProperties(empDto.getPassport(), passport);
 
-        employee.setEmployeePassport(passport); //two objects belongs together
-        passport.setEmployee(employee);//two objects belongs together
+        employee.setEmployeePassport(passport); //two objects belongs together 
+        passport.setEmployee(employee);//two objects belongs together  24 and 25 are form  bidirectional if you want to do unidirectional one is enough from 24 and 25
 
 //        Employee ←→ Passport
 //        Both objects are linked.
